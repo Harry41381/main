@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: restaurant-mysql
+    runtime: docker
+    plan: free
+    envVars:
+      - key: MYSQL_ROOT_PASSWORD
+        value: MySecurePassword123
+      - key: MYSQL_DATABASE
+        value: restaurant_order_system
